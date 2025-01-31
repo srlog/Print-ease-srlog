@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Printer, Sparkles, Download, Awar, Zap, ArrowRight } from 'lucide-react';
+import { Printer, Sparkles, Download, Award, Zap, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 
