@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
-import { DivideIcon as LucideIcon } from "lucide-react"
+import { DivideIcon as icon } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 interface NavItem {
   name: string
   url: string
-  icon: LucideIcon
+  icon: icon
 }
 
 interface NavBarProps {
@@ -16,8 +16,17 @@ interface NavBarProps {
   onItemClick: (name: string) => void
 }
 
+
 export function NavBar({ items, className, activeItem, onItemClick }: NavBarProps) {
   const [isMobile, setIsMobile] = useState(false)
+  useEffect(() => {
+    if (isMobile) {
+      console.log("Mobile view active");
+    } else {
+      console.log("Desktop view active");
+    }
+  }, [isMobile]);
+
 
   useEffect(() => {
     const handleResize = () => {

@@ -5,13 +5,14 @@ import { TemplateCard } from '@/components/template-card';
 import { CertificateForm } from '@/components/certificate-form';
 import { CertificatePreview } from '@/components/certificate-preview';
 import { ScrollArea } from '@/components/ui/scroll-area';
-import { Printer, Pencil, Layout, FileCheck, Sparkles, Zap, Download } from 'lucide-react';
+import { Printer, Pencil, Layout, FileCheck, Sparkles, Download } from 'lucide-react';
 import { NavBar } from '@/components/ui/tubelight-navbar';
 import { HoverCard, HoverCardContent, HoverCardTrigger } from '@/components/ui/hover-card';
 import { Card, CardContent } from '@/components/ui/card';
 import { ThemeSwitcher } from '@/components/theme-switcher';
 import { StarBackground } from '@/components/StarBackground';
-import { Landing } from '@/components/Landing';
+// import { Landing } from '@/components/Landing';
+// import {zap} from 'lucide-react';
 
 export default function App() {
   const [selectedTemplate, setSelectedTemplate] = useState<Template | null>(null);
