@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils"
 interface NavItem {
   name: string
   url: string
-  icon: icon
+  icon: typeof icon
 }
 
 interface NavBarProps {
